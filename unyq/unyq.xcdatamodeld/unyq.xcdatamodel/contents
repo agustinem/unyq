@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14F27" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Order" representedClassName="Order" syncable="YES">
+        <attribute name="amp_side" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="colour1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="colour2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="colour3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cover" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cpo_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="estimated_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hub" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idOrder" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="knee_ankle_axis" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="low_calf" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="max_calf" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mid_calf" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="patient" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recept_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serialnumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="top_calf" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Photo" representedClassName="Photo" syncable="YES">
+        <attribute name="color1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="color2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="color3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="section" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="admin_email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="admin_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bill_city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bill_contact" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bill_country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bill_phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bill_street" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bill_zipcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="clinic_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cpo_email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cpo_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idUser" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ship_city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ship_contact" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ship_country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ship_phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ship_street" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ship_zipcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vat" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Order" positionX="-9" positionY="36" width="128" height="360"/>
+        <element name="Photo" positionX="-9" positionY="189" width="128" height="135"/>
+        <element name="User" positionX="-9" positionY="171" width="128" height="345"/>
+    </elements>
+</model>

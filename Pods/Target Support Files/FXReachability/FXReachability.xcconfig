@@ -1,0 +1,1 @@
+FXREACHABILITY_OTHER_LDFLAGS = -framework "SystemConfiguration"

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="APLViewController">
+            <connections>
+                <outlet property="doneButton" destination="9zh-GG-bx0" id="oPF-kK-Fa7"/>
+                <outlet property="imageOver" destination="NpB-qg-cJx" id="QNQ-3H-Bx7"/>
+                <outlet property="overlayFigure" destination="ls1-b7-1dT" id="1h4-uF-569"/>
+                <outlet property="overlayToolBar" destination="9TD-rf-tXD" id="Cbt-xi-N2a"/>
+                <outlet property="takePictureButton" destination="mgB-jg-gEd" id="zjY-Xr-TIm"/>
+                <outlet property="viewOver" destination="GUC-De-gWb" id="qHl-Jn-wN9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="GUC-De-gWb">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NpB-qg-cJx">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="APH-ex-2dm"/>
+                        <constraint firstAttribute="width" secondItem="NpB-qg-cJx" secondAttribute="height" multiplier="3:4" priority="750" id="HAK-qw-tUA"/>
+                        <constraint firstAttribute="width" constant="240" id="Lo4-EB-s6g"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="APH-ex-2dm"/>
+                            <exclude reference="Lo4-EB-s6g"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ls1-b7-1dT">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="BKU-pS-FV5"/>
+                        <constraint firstAttribute="width" constant="240" id="Sxr-VH-iBX"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="BKU-pS-FV5"/>
+                            <exclude reference="Sxr-VH-iBX"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="9TD-rf-tXD" userLabel="Overlay View (Toolbar)">
+                    <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="OUW-ON-5rU"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem enabled="NO" title="Retake" id="9zh-GG-bx0">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="done:" destination="-1" id="Oaf-Qx-Vh2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="pDr-Yq-zzn"/>
+                        <barButtonItem title="Take" id="mgB-jg-gEd">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="takePhoto:" destination="-1" id="xAS-CS-vuQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9TD-rf-tXD" secondAttribute="trailing" id="05e-1S-PVM"/>
+                <constraint firstAttribute="trailing" secondItem="9TD-rf-tXD" secondAttribute="trailing" id="1Bx-Kd-hc6"/>
+                <constraint firstAttribute="bottom" secondItem="NpB-qg-cJx" secondAttribute="bottom" id="3cR-eM-bWf"/>
+                <constraint firstItem="NpB-qg-cJx" firstAttribute="top" secondItem="GUC-De-gWb" secondAttribute="top" id="3jE-Lk-cRl"/>
+                <constraint firstAttribute="centerY" secondItem="ls1-b7-1dT" secondAttribute="centerY" id="6wP-ya-iIG"/>
+                <constraint firstAttribute="centerY" secondItem="9TD-rf-tXD" secondAttribute="centerY" id="6xr-PQ-Bmu"/>
+                <constraint firstItem="9TD-rf-tXD" firstAttribute="top" secondItem="ls1-b7-1dT" secondAttribute="bottom" id="7nQ-jG-j4a"/>
+                <constraint firstItem="9TD-rf-tXD" firstAttribute="top" secondItem="NpB-qg-cJx" secondAttribute="bottom" id="AbX-GM-okl"/>
+                <constraint firstItem="NpB-qg-cJx" firstAttribute="leading" secondItem="GUC-De-gWb" secondAttribute="leading" id="F7f-IB-uSf"/>
+                <constraint firstItem="ls1-b7-1dT" firstAttribute="leading" secondItem="GUC-De-gWb" secondAttribute="leading" id="Fjy-0r-5sd"/>
+                <constraint firstItem="NpB-qg-cJx" firstAttribute="centerX" secondItem="ls1-b7-1dT" secondAttribute="centerX" id="ImN-KT-On4"/>
+                <constraint firstItem="NpB-qg-cJx" firstAttribute="height" secondItem="ls1-b7-1dT" secondAttribute="height" id="JNi-sg-n7h"/>
+                <constraint firstItem="9TD-rf-tXD" firstAttribute="leading" secondItem="GUC-De-gWb" secondAttribute="leading" id="PUM-1H-2Uu"/>
+                <constraint firstItem="NpB-qg-cJx" firstAttribute="leading" secondItem="GUC-De-gWb" secondAttribute="leading" id="PrP-lO-h1b"/>
+                <constraint firstAttribute="trailing" secondItem="ls1-b7-1dT" secondAttribute="trailing" id="U9h-CW-HRQ"/>
+                <constraint firstItem="9TD-rf-tXD" firstAttribute="top" secondItem="NpB-qg-cJx" secondAttribute="top" constant="550" id="UPw-Yi-0xZ"/>
+                <constraint firstItem="9TD-rf-tXD" firstAttribute="top" secondItem="NpB-qg-cJx" secondAttribute="bottom" id="W1z-b7-7bK"/>
+                <constraint firstItem="9TD-rf-tXD" firstAttribute="leading" secondItem="GUC-De-gWb" secondAttribute="leading" id="W9O-zu-P6q"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NpB-qg-cJx" secondAttribute="trailing" id="b20-Xg-VTi"/>
+                <constraint firstAttribute="centerX" secondItem="ls1-b7-1dT" secondAttribute="centerX" id="crW-NY-NRe"/>
+                <constraint firstItem="NpB-qg-cJx" firstAttribute="width" secondItem="ls1-b7-1dT" secondAttribute="width" id="dm8-as-PHr"/>
+                <constraint firstAttribute="centerX" secondItem="NpB-qg-cJx" secondAttribute="centerX" id="eYd-yW-0Dy"/>
+                <constraint firstAttribute="centerX" secondItem="9TD-rf-tXD" secondAttribute="centerX" id="fNV-bF-n6y"/>
+                <constraint firstAttribute="centerY" secondItem="NpB-qg-cJx" secondAttribute="centerY" id="hp1-bC-7XR"/>
+                <constraint firstAttribute="bottom" secondItem="9TD-rf-tXD" secondAttribute="bottom" id="iWf-0D-flj"/>
+                <constraint firstItem="NpB-qg-cJx" firstAttribute="centerY" secondItem="ls1-b7-1dT" secondAttribute="centerY" id="jce-M5-F4H"/>
+                <constraint firstAttribute="trailing" secondItem="NpB-qg-cJx" secondAttribute="trailing" id="mg7-hp-9bx"/>
+                <constraint firstAttribute="bottom" secondItem="9TD-rf-tXD" secondAttribute="bottom" id="rZI-0f-Eug"/>
+                <constraint firstAttribute="trailing" secondItem="NpB-qg-cJx" secondAttribute="trailing" id="sHu-aA-xgu"/>
+                <constraint firstAttribute="bottom" secondItem="ls1-b7-1dT" secondAttribute="bottom" id="v6R-Yx-lTg"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ImN-KT-On4"/>
+                    <exclude reference="PrP-lO-h1b"/>
+                    <exclude reference="b20-Xg-VTi"/>
+                    <exclude reference="jce-M5-F4H"/>
+                    <exclude reference="sHu-aA-xgu"/>
+                    <exclude reference="05e-1S-PVM"/>
+                    <exclude reference="6xr-PQ-Bmu"/>
+                    <exclude reference="7nQ-jG-j4a"/>
+                    <exclude reference="AbX-GM-okl"/>
+                    <exclude reference="UPw-Yi-0xZ"/>
+                    <exclude reference="W1z-b7-7bK"/>
+                    <exclude reference="W9O-zu-P6q"/>
+                    <exclude reference="iWf-0D-flj"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="212" y="97"/>
+        </view>
+    </objects>
+</document>
